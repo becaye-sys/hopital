@@ -1,0 +1,136 @@
+[a-zA-Z]
+@Assert\Regex(
+     *     pattern     = "/^[a-z]+$/i",
+     *     htmlPattern = "^[a-zA-Z]+$"
+     * )
+     |trim
+
+
+     <div class="dropdown">
+  <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    Medcin
+  </button>
+  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li class="nav-item">
+                            <a class="nav-link" href="{{ path("medcin_new") }}">Ajouter</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="{{ path("medcin_af") }}">Liste des Medcin</a>
+                            </li>
+
+
+
+
+
+
+
+                            <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+                    <a class="navbar-brand" href="/">Hopital</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                    </button>
+                  
+                        <div class="collapse navbar-collapse" id="navbarColor01">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                            <a class="nav-link" href="{{ path("medcin_new") }}">Ajouter</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="{{ path("medcin_af") }}">Liste des Medcin</a>
+                            </li>
+                            <li class="nav-item">
+                            <a class="nav-link" href="{{ path("ads") }}">Ajouter Service</a>
+                            {{ path("ads") }}
+                            {{ path("afs") }}
+                            {{ path("adsp") }}
+                            {{ path("afsp") }}
+                            </li>
+                             <li class="nav-item">
+                            <a class="nav-link" href="{{ path("adsp") }}">Ajouter Specialite</a>
+                            </li>
+                             <li class="nav-item">
+                            <a class="nav-link" href="{{ path("afs") }}">Liste des Services</a>
+                            </li>
+                              <li class="nav-item">
+                            <a class="nav-link" href="{{ path("afsp") }}">Liste des Specialite</a>
+                            </li>
+                          
+                        </ul>
+                    </div>
+                  </nav>
+
+
+
+
+
+
+
+
+
+
+
+                  <div class="dropdown-menu" aria-labelledby="medcin">
+                  <a class="dropdown-item" href="{{ path("medcin_new") }}">Ajouter</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="{{ path("medcin_af") }}">Liste des medcin</a>
+                  </div></li>
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Hopital</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Medcin
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="{{ path("medcin_new") }}">Ajout</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="{{ path("medcin_af") }}">Listes des medcin</a>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
+
